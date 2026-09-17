@@ -1,0 +1,1210 @@
+{
+  "meta": {
+    "name": "Generated Attribute Knowledge",
+    "version": "0.4.1",
+    "source": "canonical_attribute_properties.json",
+    "note": "Generated file. Do not hand-edit."
+  },
+  "documents": [
+    {
+      "document_id": "canonical-appearance-color",
+      "title": "标准属性：颜色",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "appearance",
+      "canonical_property_id": "appearance.color",
+      "attribute_names": [
+        "color",
+        "颜色"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/color",
+          "source_property_name": "color",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "color",
+          "source_property_name": "color",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "retrieval_terms": [
+        "颜色",
+        "color",
+        "appearance.color"
+      ],
+      "content": "标准属性：颜色（color）。定义：The visible or declared color of the product. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visual_direct、visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visual_direct",
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-appearance-pattern",
+      "title": "标准属性：图案",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "appearance",
+      "canonical_property_id": "appearance.pattern",
+      "attribute_names": [
+        "pattern",
+        "图案"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/pattern",
+          "source_property_name": "pattern",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "pattern",
+          "source_property_name": "pattern",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "retrieval_terms": [
+        "图案",
+        "pattern",
+        "appearance.pattern"
+      ],
+      "content": "标准属性：图案（pattern）。定义：A visible or declared pattern on the product. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visual_direct、visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visual_direct",
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-material_physical-material",
+      "title": "标准属性：材质",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "material_physical",
+      "canonical_property_id": "material_physical.material",
+      "attribute_names": [
+        "material",
+        "材质"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/material",
+          "source_property_name": "material",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "material",
+          "source_property_name": "material",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "retrieval_terms": [
+        "材质",
+        "material",
+        "material_physical.material"
+      ],
+      "content": "标准属性：材质（material）。定义：The material or material composition of the product. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-material_physical-size",
+      "title": "标准属性：规格尺寸",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "material_physical",
+      "canonical_property_id": "material_physical.size",
+      "attribute_names": [
+        "size",
+        "规格尺寸"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/size",
+          "source_property_name": "size",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "size",
+          "source_property_name": "size",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "retrieval_terms": [
+        "规格尺寸",
+        "size",
+        "material_physical.size"
+      ],
+      "content": "标准属性：规格尺寸（size）。定义：A standardized or declared product size. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-material_physical-width",
+      "title": "标准属性：宽度",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "material_physical",
+      "canonical_property_id": "material_physical.width",
+      "attribute_names": [
+        "width",
+        "宽度"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/width",
+          "source_property_name": "width",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "宽度",
+        "width",
+        "material_physical.width"
+      ],
+      "content": "标准属性：宽度（width）。定义：The width of the product as a measurable physical quantity. 值类型：quantity；单位规则：required_when_numeric。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-material_physical-height",
+      "title": "标准属性：高度",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "material_physical",
+      "canonical_property_id": "material_physical.height",
+      "attribute_names": [
+        "height",
+        "高度"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/height",
+          "source_property_name": "height",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "高度",
+        "height",
+        "material_physical.height"
+      ],
+      "content": "标准属性：高度（height）。定义：The height of the product as a measurable physical quantity. 值类型：quantity；单位规则：required_when_numeric。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-material_physical-depth",
+      "title": "标准属性：深度",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "material_physical",
+      "canonical_property_id": "material_physical.depth",
+      "attribute_names": [
+        "depth",
+        "深度"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/depth",
+          "source_property_name": "depth",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "深度",
+        "depth",
+        "material_physical.depth"
+      ],
+      "content": "标准属性：深度（depth）。定义：The depth of the product as a measurable physical quantity. 值类型：quantity；单位规则：required_when_numeric。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-material_physical-weight",
+      "title": "标准属性：重量",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "material_physical",
+      "canonical_property_id": "material_physical.weight",
+      "attribute_names": [
+        "weight",
+        "重量"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/weight",
+          "source_property_name": "weight",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "重量",
+        "weight",
+        "material_physical.weight"
+      ],
+      "content": "标准属性：重量（weight）。定义：The weight of the product as a measurable physical quantity. 值类型：quantity；单位规则：required_when_numeric。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-identity_variant-brand",
+      "title": "标准属性：品牌",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "identity_variant",
+      "canonical_property_id": "identity_variant.brand",
+      "attribute_names": [
+        "brand",
+        "品牌"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/brand",
+          "source_property_name": "brand",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "brand",
+          "source_property_name": "brand",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "retrieval_terms": [
+        "品牌",
+        "brand",
+        "identity_variant.brand"
+      ],
+      "content": "标准属性：品牌（brand）。定义：The brand associated with the product. 值类型：entity；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-identity_variant-product_identifier",
+      "title": "标准属性：产品标识",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "identity_variant",
+      "canonical_property_id": "identity_variant.product_identifier",
+      "attribute_names": [
+        "product identifier",
+        "产品标识"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/productID",
+          "source_property_name": "productID",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "产品标识",
+        "product identifier",
+        "identity_variant.product_identifier"
+      ],
+      "content": "标准属性：产品标识（product identifier）。定义：An identifier associated with the product. 值类型：identifier；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：无。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": []
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-identity_variant-sku",
+      "title": "标准属性：SKU",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "identity_variant",
+      "canonical_property_id": "identity_variant.sku",
+      "attribute_names": [
+        "sku",
+        "SKU"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/sku",
+          "source_property_name": "sku",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "SKU",
+        "sku",
+        "identity_variant.sku"
+      ],
+      "content": "标准属性：SKU（sku）。定义：A merchant-specific stock keeping unit for the product. 值类型：identifier；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：无。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": []
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-generic-additional_property",
+      "title": "标准属性：附加商品属性",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "generic_extension",
+      "canonical_property_id": "generic.additional_property",
+      "attribute_names": [
+        "additional property",
+        "附加商品属性"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/additionalProperty",
+          "source_property_name": "additionalProperty",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "附加商品属性",
+        "additional property",
+        "generic.additional_property"
+      ],
+      "content": "标准属性：附加商品属性（additional property）。定义：A property-value pair representing a product characteristic that does not yet have a dedicated canonical property. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data、visual_direct。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-generic-specification",
+      "title": "标准属性：商品规格项",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "generic_extension",
+      "canonical_property_id": "generic.specification",
+      "attribute_names": [
+        "specification",
+        "商品规格项"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/specification",
+          "source_property_name": "specification",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "商品规格项",
+        "specification",
+        "generic.specification"
+      ],
+      "content": "标准属性：商品规格项（specification）。定义：A structured product specification, optionally grouped by a specification section. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-installation_placement-mounting_method",
+      "title": "标准属性：安装方式",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "installation_placement",
+      "canonical_property_id": "installation_placement.mounting_method",
+      "attribute_names": [
+        "mounting method",
+        "安装方式"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000003",
+          "source_property_name": "Mounting method",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "安装方式",
+        "mounting method",
+        "installation_placement.mounting_method"
+      ],
+      "content": "标准属性：安装方式（mounting method）。定义：The method by which a technical product is mounted or fixed in position. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visual_direct、visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：contextual_observation、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visual_direct",
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-installation_placement-installation_method",
+      "title": "标准属性：安装技术/安装方法",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "installation_placement",
+      "canonical_property_id": "installation_placement.installation_method",
+      "attribute_names": [
+        "installation method",
+        "安装技术/安装方法"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF001474",
+          "source_property_name": "Installation method / installation technique",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "安装技术/安装方法",
+        "installation method",
+        "installation_placement.installation_method"
+      ],
+      "content": "标准属性：安装技术/安装方法（installation method）。定义：The installation technique or installation method applicable to the product. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data、visual_direct。仅可用于检索、不能直接写成事实的弱证据：contextual_observation、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_evidence": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-identity_variant-model",
+      "title": "标准属性：型号/款式",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "identity_variant",
+      "canonical_property_id": "identity_variant.model",
+      "attribute_names": [
+        "model",
+        "型号/款式"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000010",
+          "source_property_name": "Model",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "型号/款式",
+        "model",
+        "identity_variant.model"
+      ],
+      "content": "标准属性：型号/款式（model）。定义：The declared model designation or model form used to distinguish the product. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-function_use-application",
+      "title": "标准属性：应用/用途",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "function_use",
+      "canonical_property_id": "function_use.application",
+      "attribute_names": [
+        "application",
+        "应用/用途"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000041",
+          "source_property_name": "Application",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "应用/用途",
+        "application",
+        "function_use.application"
+      ],
+      "content": "标准属性：应用/用途（application）。定义：The application or intended area of use of a technical product. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data、visual_direct。仅可用于检索、不能直接写成事实的弱证据：contextual_observation、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_evidence": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-connectivity_compatibility-connection",
+      "title": "标准属性：连接形式",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "connectivity_compatibility",
+      "canonical_property_id": "connectivity_compatibility.connection",
+      "attribute_names": [
+        "connection",
+        "连接形式"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000443",
+          "source_property_name": "Connection",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "连接形式",
+        "connection",
+        "connectivity_compatibility.connection"
+      ],
+      "content": "标准属性：连接形式（connection）。定义：The declared connection form used by a technical product. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data、visual_direct。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-connectivity_compatibility-electric_connection_type",
+      "title": "标准属性：电气连接类型",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "connectivity_compatibility",
+      "canonical_property_id": "connectivity_compatibility.electric_connection_type",
+      "attribute_names": [
+        "type of electric connection",
+        "电气连接类型"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF003961",
+          "source_property_name": "Type of electric connection",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "电气连接类型",
+        "type of electric connection",
+        "connectivity_compatibility.electric_connection_type"
+      ],
+      "content": "标准属性：电气连接类型（type of electric connection）。定义：The type of electrical connection provided by the product. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data、visual_direct。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-power_energy-power_consumption",
+      "title": "标准属性：功耗",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "power_energy",
+      "canonical_property_id": "power_energy.power_consumption",
+      "attribute_names": [
+        "power consumption",
+        "功耗"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000346",
+          "source_property_name": "Power consumption",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "功耗",
+        "power consumption",
+        "power_energy.power_consumption"
+      ],
+      "content": "标准属性：功耗（power consumption）。定义：The electrical power consumed by the product. 值类型：quantity；单位规则：W。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-protection_environmental-ip_rating",
+      "title": "标准属性：IP防护等级",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "protection_environmental",
+      "canonical_property_id": "protection_environmental.ip_rating",
+      "attribute_names": [
+        "degree of protection (IP rating)",
+        "IP防护等级"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF005474",
+          "source_property_name": "Degree of protection (IP rating)",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "IP防护等级",
+        "degree of protection (IP rating)",
+        "protection_environmental.ip_rating"
+      ],
+      "content": "标准属性：IP防护等级（degree of protection (IP rating)）。定义：The declared degree of ingress protection expressed as an IP rating. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-material_physical-surface_protection",
+      "title": "标准属性：表面防护/表面处理",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "material_physical",
+      "canonical_property_id": "material_physical.surface_protection",
+      "attribute_names": [
+        "surface protection",
+        "表面防护/表面处理"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000139",
+          "source_property_name": "Surface protection",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "retrieval_terms": [
+        "表面防护/表面处理",
+        "surface protection",
+        "material_physical.surface_protection"
+      ],
+      "content": "标准属性：表面防护/表面处理（surface protection）。定义：The declared protective treatment or protection applied to a product surface. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：visual_direct、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "visual_direct",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-fmcg_measurement-net_content",
+      "title": "标准属性：净含量",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "fmcg_measurement",
+      "canonical_property_id": "fmcg_measurement.net_content",
+      "attribute_names": [
+        "net content",
+        "净含量"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "gs1_gdm",
+          "source_property_id": "BMS-3733",
+          "source_property_name": "Net Content",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "GDM 2.18.0"
+        },
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/netContent",
+          "source_property_name": "netContent",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "净含量",
+        "net content",
+        "fmcg_measurement.net_content"
+      ],
+      "content": "标准属性：净含量（net content）。定义：The quantity of product contained in a package, usually as claimed on the label. 值类型：quantity；单位规则：required_when_numeric。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-fmcg_measurement-net_weight",
+      "title": "标准属性：净重",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "fmcg_measurement",
+      "canonical_property_id": "fmcg_measurement.net_weight",
+      "attribute_names": [
+        "net weight",
+        "净重"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "gs1_gdm",
+          "source_property_id": "BMS-3779",
+          "source_property_name": "Net Weight",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/netWeight",
+          "source_property_name": "netWeight",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "净重",
+        "net weight",
+        "fmcg_measurement.net_weight"
+      ],
+      "content": "标准属性：净重（net weight）。定义：The weight of the product excluding packaging material. 值类型：quantity；单位规则：required_when_numeric。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-fmcg_composition-ingredient_statement",
+      "title": "标准属性：配料表/成分声明",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "fmcg_composition",
+      "canonical_property_id": "fmcg_composition.ingredient_statement",
+      "attribute_names": [
+        "ingredient statement",
+        "配料表/成分声明"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/ingredientStatement",
+          "source_property_name": "ingredientStatement",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "配料表/成分声明",
+        "ingredient statement",
+        "fmcg_composition.ingredient_statement"
+      ],
+      "content": "标准属性：配料表/成分声明（ingredient statement）。定义：The ingredient composition of a food, beverage or tobacco product expressed as a statement. 值类型：text；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：无。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": []
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-fmcg_composition-has_allergen",
+      "title": "标准属性：过敏原信息",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "fmcg_composition",
+      "canonical_property_id": "fmcg_composition.has_allergen",
+      "attribute_names": [
+        "has allergen",
+        "过敏原信息"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/hasAllergen",
+          "source_property_name": "hasAllergen",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "过敏原信息",
+        "has allergen",
+        "fmcg_composition.has_allergen"
+      ],
+      "content": "标准属性：过敏原信息（has allergen）。定义：A relation to declared allergen information for the product. 值类型：entity；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：无。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": []
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-fmcg_storage_use-refrigeration_claim",
+      "title": "标准属性：冷藏要求",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "fmcg_storage_use",
+      "canonical_property_id": "fmcg_storage_use.refrigeration_claim",
+      "attribute_names": [
+        "food beverage refrigeration claim",
+        "冷藏要求"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/foodBeverageRefrigerationClaim",
+          "source_property_name": "foodBeverageRefrigerationClaim",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "冷藏要求",
+        "food beverage refrigeration claim",
+        "fmcg_storage_use.refrigeration_claim"
+      ],
+      "content": "标准属性：冷藏要求（food beverage refrigeration claim）。定义：Whether a food or beverage product requires refrigeration. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-fmcg_storage_use-target_use",
+      "title": "标准属性：目标食用/使用场景",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "fmcg_storage_use",
+      "canonical_property_id": "fmcg_storage_use.target_use",
+      "attribute_names": [
+        "food beverage target use",
+        "目标食用/使用场景"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/foodBeverageTargetUse",
+          "source_property_name": "foodBeverageTargetUse",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "目标食用/使用场景",
+        "food beverage target use",
+        "fmcg_storage_use.target_use"
+      ],
+      "content": "标准属性：目标食用/使用场景（food beverage target use）。定义：The meal or use occasion targeted for a food or beverage product. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：contextual_observation、model_inference。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      },
+      "active": true,
+      "version": "0.4.1"
+    },
+    {
+      "document_id": "canonical-fmcg_composition-genetically_modified_declaration",
+      "title": "标准属性：转基因声明",
+      "document_type": "canonical_attribute_guide",
+      "scope_type": "attribute_property",
+      "attribute_family": "fmcg_composition",
+      "canonical_property_id": "fmcg_composition.genetically_modified_declaration",
+      "attribute_names": [
+        "genetically modified declaration",
+        "转基因声明"
+      ],
+      "rule_origin": "generated_from_canonical_property_layer",
+      "source_basis": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/geneticallyModifiedDeclaration",
+          "source_property_name": "geneticallyModifiedDeclaration",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "retrieval_terms": [
+        "转基因声明",
+        "genetically modified declaration",
+        "fmcg_composition.genetically_modified_declaration"
+      ],
+      "content": "标准属性：转基因声明（genetically modified declaration）。定义：A declaration about the presence or absence of genetically modified protein or DNA. 值类型：defined_term；单位规则：无固定单位。允许作为最终文案事实的证据：visible_text、verified_structured_data。仅可用于检索、不能直接写成事实的弱证据：无。生成文案时不得因为检索到此属性知识，就假定当前商品一定拥有该属性；只有当前图片、可读文字或可信结构化数据实际支持时，才可写入具体属性值。",
+      "generation_policy": {
+        "allowed_evidence": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_evidence": []
+      },
+      "active": true,
+      "version": "0.4.1"
+    }
+  ]
+}

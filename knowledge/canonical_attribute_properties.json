@@ -1,0 +1,1025 @@
+{
+  "meta": {
+    "name": "Product Agent Canonical Attribute Property Layer",
+    "version": "0.3.4-C5.4",
+    "purpose": "Replace family-only seed knowledge with a property-level canonical layer that preserves source provenance, value semantics and evidence policy.",
+    "important": [
+      "This file is executable source-of-truth for the next knowledge builder.",
+      "Only properties with sufficiently clear external semantic support are admitted to the core layer.",
+      "Domain-specific properties from IEC/ECLASS/ETIM/GS1 will be imported as extensions instead of guessed here.",
+      "Taobao/JD are not used as primary property-semantic sources."
+    ],
+    "domain_extensions": {
+      "etim_verified_features": 9,
+      "gs1_verified_fmcg_properties": 7,
+      "note": "ETIM feature identifiers are taken from public ETIM Viewer pages; GS1 FMCG properties are grounded in GS1 GDM/Web Vocabulary."
+    }
+  },
+  "value_types": {
+    "text": "Free or normalized text.",
+    "defined_term": "Controlled/coded term.",
+    "quantity": "Numeric value with unit.",
+    "identifier": "Product identifier string.",
+    "entity": "Reference to another entity."
+  },
+  "properties": [
+    {
+      "canonical_property_id": "appearance.color",
+      "canonical_name_zh": "颜色",
+      "canonical_name_en": "color",
+      "family_id": "appearance",
+      "definition": "The visible or declared color of the product.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/color",
+          "source_property_name": "color",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "color",
+          "source_property_name": "color",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visual_direct",
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "appearance.pattern",
+      "canonical_name_zh": "图案",
+      "canonical_name_en": "pattern",
+      "family_id": "appearance",
+      "definition": "A visible or declared pattern on the product.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/pattern",
+          "source_property_name": "pattern",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "pattern",
+          "source_property_name": "pattern",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visual_direct",
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "material_physical.material",
+      "canonical_name_zh": "材质",
+      "canonical_name_en": "material",
+      "family_id": "material_physical",
+      "definition": "The material or material composition of the product.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/material",
+          "source_property_name": "material",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "material",
+          "source_property_name": "material",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "material_physical.size",
+      "canonical_name_zh": "规格尺寸",
+      "canonical_name_en": "size",
+      "family_id": "material_physical",
+      "definition": "A standardized or declared product size.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/size",
+          "source_property_name": "size",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "size",
+          "source_property_name": "size",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "material_physical.width",
+      "canonical_name_zh": "宽度",
+      "canonical_name_en": "width",
+      "family_id": "material_physical",
+      "definition": "The width of the product as a measurable physical quantity.",
+      "value_type": "quantity",
+      "unit": "required_when_numeric",
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/width",
+          "source_property_name": "width",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "material_physical.height",
+      "canonical_name_zh": "高度",
+      "canonical_name_en": "height",
+      "family_id": "material_physical",
+      "definition": "The height of the product as a measurable physical quantity.",
+      "value_type": "quantity",
+      "unit": "required_when_numeric",
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/height",
+          "source_property_name": "height",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "material_physical.depth",
+      "canonical_name_zh": "深度",
+      "canonical_name_en": "depth",
+      "family_id": "material_physical",
+      "definition": "The depth of the product as a measurable physical quantity.",
+      "value_type": "quantity",
+      "unit": "required_when_numeric",
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/depth",
+          "source_property_name": "depth",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "material_physical.weight",
+      "canonical_name_zh": "重量",
+      "canonical_name_en": "weight",
+      "family_id": "material_physical",
+      "definition": "The weight of the product as a measurable physical quantity.",
+      "value_type": "quantity",
+      "unit": "required_when_numeric",
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/weight",
+          "source_property_name": "weight",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "identity_variant.brand",
+      "canonical_name_zh": "品牌",
+      "canonical_name_en": "brand",
+      "family_id": "identity_variant",
+      "definition": "The brand associated with the product.",
+      "value_type": "entity",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/brand",
+          "source_property_name": "brand",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "google_merchant_product_data",
+          "source_property_id": "brand",
+          "source_property_name": "brand",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "identity_variant.product_identifier",
+      "canonical_name_zh": "产品标识",
+      "canonical_name_en": "product identifier",
+      "family_id": "identity_variant",
+      "definition": "An identifier associated with the product.",
+      "value_type": "identifier",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/productID",
+          "source_property_name": "productID",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": []
+      }
+    },
+    {
+      "canonical_property_id": "identity_variant.sku",
+      "canonical_name_zh": "SKU",
+      "canonical_name_en": "sku",
+      "family_id": "identity_variant",
+      "definition": "A merchant-specific stock keeping unit for the product.",
+      "value_type": "identifier",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "commerce"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/sku",
+          "source_property_name": "sku",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": []
+      }
+    },
+    {
+      "canonical_property_id": "generic.additional_property",
+      "canonical_name_zh": "附加商品属性",
+      "canonical_name_en": "additional property",
+      "family_id": "generic_extension",
+      "definition": "A property-value pair representing a product characteristic that does not yet have a dedicated canonical property.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product",
+        "extension_point"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/additionalProperty",
+          "source_property_name": "additionalProperty",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "generic.specification",
+      "canonical_name_zh": "商品规格项",
+      "canonical_name_en": "specification",
+      "family_id": "generic_extension",
+      "definition": "A structured product specification, optionally grouped by a specification section.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "generic_product",
+        "extension_point"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "schema_org_product",
+          "source_property_id": "https://schema.org/specification",
+          "source_property_name": "specification",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "installation_placement.mounting_method",
+      "canonical_name_zh": "安装方式",
+      "canonical_name_en": "mounting method",
+      "family_id": "installation_placement",
+      "definition": "The method by which a technical product is mounted or fixed in position.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "technical_product",
+        "electrical_product",
+        "building_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000003",
+          "source_property_name": "Mounting method",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visual_direct",
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "installation_placement.installation_method",
+      "canonical_name_zh": "安装技术/安装方法",
+      "canonical_name_en": "installation method",
+      "family_id": "installation_placement",
+      "definition": "The installation technique or installation method applicable to the product.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "technical_product",
+        "electrical_product",
+        "building_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF001474",
+          "source_property_name": "Installation method / installation technique",
+          "mapping_type": "exact",
+          "mapping_confidence": 0.98,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_from": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "identity_variant.model",
+      "canonical_name_zh": "型号/款式",
+      "canonical_name_en": "model",
+      "family_id": "identity_variant",
+      "definition": "The declared model designation or model form used to distinguish the product.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "technical_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000010",
+          "source_property_name": "Model",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "function_use.application",
+      "canonical_name_zh": "应用/用途",
+      "canonical_name_en": "application",
+      "family_id": "function_use",
+      "definition": "The application or intended area of use of a technical product.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "technical_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000041",
+          "source_property_name": "Application",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_from": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "connectivity_compatibility.connection",
+      "canonical_name_zh": "连接形式",
+      "canonical_name_en": "connection",
+      "family_id": "connectivity_compatibility",
+      "definition": "The declared connection form used by a technical product.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "technical_product",
+        "electrical_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000443",
+          "source_property_name": "Connection",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "connectivity_compatibility.electric_connection_type",
+      "canonical_name_zh": "电气连接类型",
+      "canonical_name_en": "type of electric connection",
+      "family_id": "connectivity_compatibility",
+      "definition": "The type of electrical connection provided by the product.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "electrical_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF003961",
+          "source_property_name": "Type of electric connection",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data",
+          "visual_direct"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "power_energy.power_consumption",
+      "canonical_name_zh": "功耗",
+      "canonical_name_en": "power consumption",
+      "family_id": "power_energy",
+      "definition": "The electrical power consumed by the product.",
+      "value_type": "quantity",
+      "unit": "W",
+      "allowed_values": null,
+      "domain_scope": [
+        "electrical_product",
+        "electronic_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000346",
+          "source_property_name": "Power consumption",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "protection_environmental.ip_rating",
+      "canonical_name_zh": "IP防护等级",
+      "canonical_name_en": "degree of protection (IP rating)",
+      "family_id": "protection_environmental",
+      "definition": "The declared degree of ingress protection expressed as an IP rating.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "electrical_product",
+        "technical_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF005474",
+          "source_property_name": "Degree of protection (IP rating)",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "material_physical.surface_protection",
+      "canonical_name_zh": "表面防护/表面处理",
+      "canonical_name_en": "surface protection",
+      "family_id": "material_physical",
+      "definition": "The declared protective treatment or protection applied to a product surface.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "technical_product",
+        "building_product"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "etim",
+          "source_property_id": "EF000139",
+          "source_property_name": "Surface protection",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "ETIM-10.0"
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "visual_direct",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "fmcg_measurement.net_content",
+      "canonical_name_zh": "净含量",
+      "canonical_name_en": "net content",
+      "family_id": "fmcg_measurement",
+      "definition": "The quantity of product contained in a package, usually as claimed on the label.",
+      "value_type": "quantity",
+      "unit": "required_when_numeric",
+      "allowed_values": null,
+      "domain_scope": [
+        "fmcg",
+        "packaged_consumer_good",
+        "food_beverage"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "gs1_gdm",
+          "source_property_id": "BMS-3733",
+          "source_property_name": "Net Content",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0,
+          "source_version": "GDM 2.18.0"
+        },
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/netContent",
+          "source_property_name": "netContent",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "fmcg_measurement.net_weight",
+      "canonical_name_zh": "净重",
+      "canonical_name_en": "net weight",
+      "family_id": "fmcg_measurement",
+      "definition": "The weight of the product excluding packaging material.",
+      "value_type": "quantity",
+      "unit": "required_when_numeric",
+      "allowed_values": null,
+      "domain_scope": [
+        "fmcg",
+        "packaged_consumer_good"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "gs1_gdm",
+          "source_property_id": "BMS-3779",
+          "source_property_name": "Net Weight",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        },
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/netWeight",
+          "source_property_name": "netWeight",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "fmcg_composition.ingredient_statement",
+      "canonical_name_zh": "配料表/成分声明",
+      "canonical_name_en": "ingredient statement",
+      "family_id": "fmcg_composition",
+      "definition": "The ingredient composition of a food, beverage or tobacco product expressed as a statement.",
+      "value_type": "text",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "food_beverage",
+        "fmcg"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/ingredientStatement",
+          "source_property_name": "ingredientStatement",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": []
+      }
+    },
+    {
+      "canonical_property_id": "fmcg_composition.has_allergen",
+      "canonical_name_zh": "过敏原信息",
+      "canonical_name_en": "has allergen",
+      "family_id": "fmcg_composition",
+      "definition": "A relation to declared allergen information for the product.",
+      "value_type": "entity",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "food_beverage",
+        "fmcg"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/hasAllergen",
+          "source_property_name": "hasAllergen",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": []
+      }
+    },
+    {
+      "canonical_property_id": "fmcg_storage_use.refrigeration_claim",
+      "canonical_name_zh": "冷藏要求",
+      "canonical_name_en": "food beverage refrigeration claim",
+      "family_id": "fmcg_storage_use",
+      "definition": "Whether a food or beverage product requires refrigeration.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "food_beverage",
+        "fmcg"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/foodBeverageRefrigerationClaim",
+          "source_property_name": "foodBeverageRefrigerationClaim",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "fmcg_storage_use.target_use",
+      "canonical_name_zh": "目标食用/使用场景",
+      "canonical_name_en": "food beverage target use",
+      "family_id": "fmcg_storage_use",
+      "definition": "The meal or use occasion targeted for a food or beverage product.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "food_beverage",
+        "fmcg"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/foodBeverageTargetUse",
+          "source_property_name": "foodBeverageTargetUse",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": [
+          "contextual_observation",
+          "model_inference"
+        ]
+      }
+    },
+    {
+      "canonical_property_id": "fmcg_composition.genetically_modified_declaration",
+      "canonical_name_zh": "转基因声明",
+      "canonical_name_en": "genetically modified declaration",
+      "family_id": "fmcg_composition",
+      "definition": "A declaration about the presence or absence of genetically modified protein or DNA.",
+      "value_type": "defined_term",
+      "unit": null,
+      "allowed_values": null,
+      "domain_scope": [
+        "food_beverage",
+        "fmcg"
+      ],
+      "source_mappings": [
+        {
+          "source_id": "gs1_web_vocabulary",
+          "source_property_id": "https://ref.gs1.org/voc/geneticallyModifiedDeclaration",
+          "source_property_name": "geneticallyModifiedDeclaration",
+          "mapping_type": "exact",
+          "mapping_confidence": 1.0
+        }
+      ],
+      "evidence_policy": {
+        "assertable_from": [
+          "visible_text",
+          "verified_structured_data"
+        ],
+        "retrieval_only_from": []
+      }
+    }
+  ],
+  "domain_extension_policy": {
+    "status": "required_next",
+    "rule": "Control, installation, connectivity, power, function and technical component properties must be added from domain dictionaries such as IEC CDD, ECLASS, ETIM or GS1 when exact source definitions/identifiers are available. Do not fabricate property identifiers.",
+    "target_families": [
+      "structure_components",
+      "control_interaction",
+      "installation_placement",
+      "function_use",
+      "connectivity_compatibility",
+      "power_energy"
+    ]
+  }
+}
